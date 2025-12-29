@@ -1,9 +1,15 @@
 .header{
+display:flex;
+    flex-direction: column;
+    background-color: #222831;
 
-    background-color: #473472;
-    height:100px;
 }
 h2{
     text-align: start;
-    color:#D6F4ED;
+    color:#DFD0B8;
+    margin:10px;
+}
+.logo{
+    width:200px;
+
 }

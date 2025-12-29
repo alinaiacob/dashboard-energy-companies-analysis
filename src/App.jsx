@@ -1,5 +1,6 @@
 import './App.css'
 import Header from "./components/header/Header.jsx";
+import Carousel from "./components/carousel/Carousel.jsx";
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
         <div className="main">
             <Header />
+            <Carousel/>
         </div>
 
     </>

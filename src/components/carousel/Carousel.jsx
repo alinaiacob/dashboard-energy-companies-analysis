@@ -5,7 +5,16 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './Carousel.css'
+import {getMarketData} from "../../api/marketApi.js";
+const getData=async()=>{
+    try{
+        const result = await getMarketData("NXT")
+        console.log(result)
+    }catch(err){
+        console.log(err)
+    }
 
+}
 const Carousel = () => {
     return (
         <Swiper spaceBetween={10}
@@ -23,6 +32,7 @@ const Carousel = () => {
                 <div>
                     <h3>NextPower energy</h3>
                     <img src="nextpower.webp" alt="nextpower" className="nextpower"/>
+                    <button onClick={getData}>Get Overview</button>
                 </div>
             </SwiperSlide>
             <SwiperSlide className="slide">
